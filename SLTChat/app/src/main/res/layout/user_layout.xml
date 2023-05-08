@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="8dp"
+    android:elevation="5dp"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="400dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/gradient_texts" />
+
+        <ImageView
+            android:id="@+id/imageofUser"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:padding="15dp"
+            android:weightSum="3"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/vdoCall"
+                android:layout_width="40dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/cross" />
+
+            <ImageView
+                android:id="@+id/chatting"
+                android:layout_width="40dp"
+                android:layout_weight="1"
+
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/messenger" />
+
+            <ImageView
+                android:id="@+id/hearts"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+
+                app:srcCompat="@drawable/love1"
+                app:tint="#B388FF" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/frontEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout2" />
+
+        <TextView
+            android:id="@+id/frontName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/frontEmail"
+            app:layout_constraintStart_toStartOf="@+id/frontEmail" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

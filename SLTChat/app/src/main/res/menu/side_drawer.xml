@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/favourite"
+        android:title="@string/favourite"
+        android:icon="@drawable/love1"/>
+    <item
+        android:id="@+id/rateUs"
+        android:title="@string/rating"
+        android:icon="@drawable/star"/>
+    <item
+        android:id="@+id/shareApp"
+        android:title="@string/share"
+        android:icon="@drawable/share"/>
+
+    <item
+        android:id="@+id/tnc"
+        android:title="@string/tAndC"
+        android:icon="@drawable/tnc"/>
+    <item
+        android:id="@+id/pp"
+        android:title="@string/privacyPolicy"
+        android:icon="@drawable/ppolicy"/>
+    <item
+        android:id="@+id/developer"
+        android:title="@string/developer"
+        android:icon="@drawable/developer"/>
+</menu>
