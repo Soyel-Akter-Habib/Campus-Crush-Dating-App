@@ -7,13 +7,14 @@
         <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/drawable/button_bg.xml" value="0.11" />
         <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/drawable/email.xml" value="0.1125" />
         <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/drawable/gradient_texts.xml" value="0.123" />
+        <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/drawable/ic_baseline_notifications_24.xml" value="0.204" />
         <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/drawable/ic_baseline_smartphone_24.xml" value="0.11" />
         <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/drawable/ic_baseline_verified_user_24.xml" value="0.1105" />
         <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/drawable/ic_undraw_intense_feeling.xml" value="0.1015" />
         <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/drawable/location.xml" value="0.1125" />
         <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/drawable/person.xml" value="0.1125" />
         <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/drawable/phone_2.xml" value="0.11" />
-        <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/layout/activity_chat.xml" value="1.0" />
+        <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/layout/activity_chat.xml" value="0.33" />
         <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/layout/activity_edit_profile.xml" value="0.14411027568922305" />
         <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/layout/activity_main.xml" value="0.25" />
@@ -26,7 +27,9 @@
         <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/layout/header_layout.xml" value="0.14609375" />
         <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/layout/loading_layout.xml" value="0.22" />
         <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/layout/message_user.xml" value="0.22" />
-        <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/layout/user_layout.xml" value="0.25" />
+        <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/layout/receiver_layout.xml" value="0.33" />
+        <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/layout/sender_layout.xml" value="0.25" />
+        <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/layout/user_layout.xml" value="0.353515625" />
         <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/menu/bottom_menu.xml" value="0.22" />
         <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/menu/nav_drawer.xml" value="0.22" />
         <entry key="..\:/Users/Soyel Akter Habib/AndroidStudioProjects/SLTChat/app/src/main/res/menu/side_drawer.xml" value="0.22" />

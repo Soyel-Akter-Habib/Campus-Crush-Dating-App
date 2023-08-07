@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:layout_gravity="start"
+    app:cardCornerRadius="14dp"
+
+    app:cardElevation="4dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="6dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/senderImage"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:src="@drawable/user1">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/msgText"
+            android:layout_width="250dp"
+            android:layout_height="64dp"
+            android:layout_margin="4dp"
+            android:fontFamily="@font/cabin"
+            android:padding="2dp"
+            android:textColor="@color/black"
+            android:text="here the messages will be shown"
+            android:textSize="20sp" />
+
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

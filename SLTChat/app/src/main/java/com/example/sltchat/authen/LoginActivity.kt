@@ -128,6 +128,7 @@ class LoginActivity : AppCompatActivity() {
                         finish()
 
                     }else{
+                        dialog.dismiss()
                         startActivity(Intent(this@LoginActivity,RegisterActivity::class.java))
                         finish()
                     }

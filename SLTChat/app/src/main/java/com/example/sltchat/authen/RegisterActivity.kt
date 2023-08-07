@@ -12,11 +12,14 @@ import com.example.sltchat.databinding.ActivityRegisterBinding
 import com.example.sltchat.model.UserModel
 import com.example.sltchat.utilities.Config
 import com.example.sltchat.utilities.Config.hideDialog
+import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.messaging.FirebaseMessaging
 import com.google.firebase.storage.FirebaseStorage
 
 class RegisterActivity : AppCompatActivity() {
+
 private lateinit var binding:ActivityRegisterBinding
 private var imgUri :Uri? =null
 private val selectImage = registerForActivityResult(ActivityResultContracts.GetContent()){
@@ -78,27 +81,47 @@ private val selectImage = registerForActivityResult(ActivityResultContracts.GetC
     }
 
     private fun storeData(imageUrl: Uri?) {
-        val data = UserModel(
-            name = binding.userName.text.toString(),
-            image = imageUrl.toString(),
-            email = binding.userEmail.text.toString(),
-            location = binding.userLocation.text.toString()
+//        val token :String? =null
 
-
-        )
-
-        FirebaseDatabase.getInstance().getReference("users")
-            .child(FirebaseAuth.getInstance().currentUser!!.phoneNumber!!)
-            .setValue(data).addOnCompleteListener{
-                hideDialog()
-                if(it.isSuccessful){
-                    startActivity(Intent(this,MainActivity::class.java))
-                    finish()
-                    Toast.makeText(this,"User registered sucessfully",Toast.LENGTH_SHORT).show()
-                }else{
-                    Toast.makeText(this,it.exception!!.message,Toast.LENGTH_SHORT).show()
-
-                }
+        FirebaseMessaging.getInstance().token.addOnCompleteListener(OnCompleteListener { task ->
+            if (!task.isSuccessful) {
+                return@OnCompleteListener
             }
+
+            // Get new FCM registration token
+            val token = task.result
+
+            val data = UserModel(
+                number = FirebaseAuth.getInstance().currentUser!!.phoneNumber.toString(),
+                name = binding.userName.text.toString(),
+                image = imageUrl.toString(),
+                email = binding.userEmail.text.toString(),
+                location = binding.userLocation.text.toString(),
+                fcmToken = token
+
+
+
+            )
+
+
+            FirebaseDatabase.getInstance().getReference("users")
+                .child(FirebaseAuth.getInstance().currentUser!!.phoneNumber!!)
+                .setValue(data).addOnCompleteListener{
+                    hideDialog()
+                    if(it.isSuccessful){
+                        startActivity(Intent(this,MainActivity::class.java))
+                        finish()
+                        Toast.makeText(this,"User registered sucessfully",Toast.LENGTH_SHORT).show()
+                    }else{
+                        Toast.makeText(this,it.exception!!.message,Toast.LENGTH_SHORT).show()
+
+                    }
+                }
+
+        })
+
+
+
+
     }
 }

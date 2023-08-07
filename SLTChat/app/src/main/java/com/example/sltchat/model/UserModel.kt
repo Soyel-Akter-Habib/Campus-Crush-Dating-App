@@ -7,6 +7,7 @@ data class UserModel(
     val location : String? ="",
     val gender :String? ="",
     val relationship : String? ="",
+    val fcmToken:String? ="",
     val image : String? ="",
     val star : String? ="",
     val age :String? ="",

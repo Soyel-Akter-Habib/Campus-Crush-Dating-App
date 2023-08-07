@@ -23,14 +23,15 @@ class DatingAdapter(val context : android.content.Context, val list:ArrayList<Us
     override fun onBindViewHolder(holder: DatingViewHolder, position: Int) {
 
         holder.binding.frontName.text = list[position].name
-        holder.binding.frontEmail.text = list[position].email
+        holder.binding.frontEmail.text = list[position].location
+
 
         Glide.with(context).load(list[position].image).into(holder.binding.imageofUser)
 
         holder.binding.chatting.setOnClickListener{
-            val intent = Intent(context, ChatActivity::class.java)
-            intent.putExtra("userId",list[position].number)
-            context.startActivity(intent)
+            val passTo = Intent(context, ChatActivity::class.java)
+            passTo.putExtra("userId",list[position].number)
+            context.startActivity(passTo)
         }
 
     }

@@ -37,6 +37,20 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service android:name=".utilities.MyFirebaseMessagingService"
+            android:exported="false"
+            android:permission="com.google.android.c2dm,permission,Send">
+
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.android.c2dm.intent.Reciever"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
